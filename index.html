@@ -4,8 +4,8 @@
 <script>
   System.config({
     map: {
-      css: 'node_modules/system-css/css.js',
-      json: 'node_modules/systemjs-plugin-json/json.js',
+      'system-css': 'node_modules/system-css/css.js',
+      'system-json': 'node_modules/systemjs-plugin-json/json.js',
       'phosphor-domutil': 'node_modules/phosphor-domutil/lib/index.js',
       'phosphor-signaling': 'node_modules/phosphor-signaling/lib/index.js',
       'phosphor-widget': 'node_modules/phosphor-widget/lib/index.js',
@@ -22,10 +22,10 @@
         defaultExtension: 'js',
         meta: {
           '*.css': {
-            loader: 'css'
+            loader: 'system-css'
           },
           '*.json': {
-            loader: 'json'
+            loader: 'system-json'
           }
         }
       }
