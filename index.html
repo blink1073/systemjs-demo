@@ -14,10 +14,21 @@
       '*.json': {
         loader: 'json'
       }
+    },
+    packages: {
+      '.': {
+        defaultExtension: 'js',
+        meta: {
+          '*.css': {
+            loader: 'css'
+          },
+          '*.json': {
+            loader: 'json'
+          }
+        }
+      }
     }
   });
-  System.import('sub/test.css');
   System.import('test.json').then(function(test) { console.log(test.glossary); });
-  System.import('sub/amd.js').then(function(amd) { console.log(amd); });
-  System.import('sub/cjs.js').then(function(cjs) { console.log(cjs); });
+  System.import('sub/cjs').then(function(cjs) { console.log(cjs); });
 </script>
