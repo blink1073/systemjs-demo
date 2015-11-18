@@ -1,7 +1,7 @@
 SystemJS Demo
 =============
 
-Demo of using systemjs to load css, json, and relative images in css.
+Demo of using SystemJS to load JSON and CSS.
 
 ```bash
 npm install
