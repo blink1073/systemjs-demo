@@ -2,20 +2,22 @@
 <script src="node_modules/systemjs/dist/system.js"></script>
 
 <script>
-System.config({
-  map: {
-    css: 'node_modules/system-css/css.js',
-    json: 'node_modules/systemjs-plugin-json/json.js'
-  },
-  meta: {
-    '*.css': {
-      loader: 'css'
+  System.config({
+    map: {
+      css: 'node_modules/system-css/css.js',
+      json: 'node_modules/systemjs-plugin-json/json.js'
     },
-    '*.json': {
-      loader: 'json'
+    meta: {
+      '*.css': {
+        loader: 'css'
+      },
+      '*.json': {
+        loader: 'json'
+      }
     }
-  }
-});
+  });
   System.import('sub/test.css');
   System.import('test.json').then(function(test) { console.log(test.glossary); });
+  System.import('sub/amd.js').then(function(amd) { console.log(amd); });
+  System.import('sub/cjs.js').then(function(cjs) { console.log(cjs); });
 </script>
