@@ -1,7 +1,8 @@
 SystemJS Demo
 =============
 
-Demo of using SystemJS to load JSON and CSS with a relative image URL.
+Demo of using SystemJS to load CommonJS and AMD formats, as well as
+JSON and CSS with a relative image URL.
 
 ```bash
 npm install
