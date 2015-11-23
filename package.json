@@ -1,8 +1,25 @@
 {
   "dependencies": {
+    "karma": "^0.13.9",
+    "karma-browserify": "^4.3.0",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-coverage": "^0.5.0",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-ie-launcher": "^0.2.0",
+    "karma-mocha": "^0.2.0",
+    "karma-mocha-reporter": "^1.1.1",
+    "karma-systemjs": "^0.9.0",
+    "mocha": "^2.2.5",
     "phosphor-menus": "^0.9.6",
     "system-css": "^0.1.0",
     "systemjs": "^0.19.6",
     "systemjs-plugin-json": "^0.1.0"
+  },
+  "scripts": {
+    "test:chrome": "karma start --browsers=Chrome test/karma.conf.js",
+    "test:coverage": "karma start --browsers=Firefox test/karma-cov.conf.js",
+    "test:firefox": "karma start --browsers=Firefox test/karma.conf.js",
+    "test:ie": "karma start --browsers=IE test/karma.conf.js",
+    "test": "npm run test:firefox"
   }
 }

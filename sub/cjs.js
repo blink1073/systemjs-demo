@@ -4,4 +4,9 @@ console.log(other);
 
 module.exports = function () {
   console.log('hello from cjs!');
+  describe('foo', function () {
+    it('should pass', function() {
+
+    });
+  })
 };
